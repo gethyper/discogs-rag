@@ -1,0 +1,22 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/main/.schema/devbox.schema.json",
+  "packages": [
+    "nodejs_22",
+    "nodePackages.npm"
+  ],
+  "env": {
+    "DEVBOX_COREPACK_ENABLED": "true"
+  },
+  "shell": {
+    "init_hook": [
+      "echo '🎵 Discogs RAG dev environment ready'",
+      "echo 'Run: npm install && npm run dev'"
+    ],
+    "scripts": {
+      "dev": "npm run dev",
+      "build": "npm run build",
+      "start": "npm run start",
+      "tunnel": "npx ngrok http 3000"
+    }
+  }
+}
